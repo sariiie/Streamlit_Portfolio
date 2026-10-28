@@ -10,8 +10,8 @@ import streamlit as st
 # CONFIG  (edit the TODO items so the page is truly yours)
 # ------------------------------------------------------------------
 NAME = "Sarah Mae B. Sario"
-SECTION = "CSIT 349 · Section: TODO"          # TODO: put your real section
-PROGRAM = "BS Computer Science, Year 3"        # TODO: confirm your year level
+SECTION = "CSIT 349 · Section: F2"          # Updated to Section F2
+PROGRAM = "BS Computer Science, Year 3"        
 SCHOOL = "Cebu Institute of Technology – University"
 EMAIL = "sarahmaebasalo8@gmail.com"
 BASE = os.path.dirname(os.path.abspath(__file__))
@@ -31,11 +31,12 @@ INTERESTS = [
     "🎬 Watching movies", "🎮 Playing ML", "🧱 Roblox",
 ]
 
-# TODO: write this in your own words!
 BIO = (
     "I am a Computer Science student at Cebu Institute of Technology – University. "
-    "I enjoy building apps that solve everyday problems, especially in healthcare "
-    "and study tools. I'm now exploring data science and AI."
+    "My journey into tech started from scrolling through aesthetic desk setups and day-in-the-life "
+    "vlogs on TikTok, which inspired me to dive into coding. "
+    "I enjoy building apps that solve everyday problems, especially in healthcare and study tools, "
+    "and unwinding with a cozy rom-com or sitcom after a long day of debugging."
 )
 
 
@@ -116,8 +117,8 @@ MILESTONES = pd.DataFrame(
         "When": ["May 2024", "2024", "2024 – 2026", "Sept 2026", "May 2028"],
         "Milestone": [
             "Finished Senior High School (STEM) at Immaculate Heart of Mary Academy",
-            "Started BS Computer Science at CIT-U",       # TODO: confirm year
-            "Built MedServe, StudyGo and MediMap",         # TODO: confirm years
+            "Started BS Computer Science at CIT-U",       
+            "Built MedServe, StudyGo and MediMap",          
             "Enrolled in the OmniCampus Data Science & AI course (remote)",
             "Expected graduation",
         ],
@@ -149,7 +150,7 @@ def quick_facts():
         "- 🛠️ Projects: MedServe, StudyGo, MediMap\n"
         "- 🗣️ I speak English, Filipino and Cebuano\n"
         "- 📊 Currently taking a Data Science & AI course\n"
-        "- 🎮 Off-duty: reading, series, movies, ML and Roblox"
+        "- 🎮 Off-duty: rom-coms, sitcoms, ML and Roblox"
     )
     if st.button("Close"):
         st.rerun()
@@ -354,7 +355,9 @@ with tab_story:
         st.subheader("Background")
         st.write(
             "I'm from Cebu, Philippines. I speak English, Filipino and Cebuano. "
-            "TODO: add 2–3 sentences about where you grew up and what pushed you toward computers."
+            "My fascination with tech originally sparked from seeing aesthetic coding setups, "
+            "productivity vlogs, and day-in-the-life tech videos on TikTok, making me curious "
+            "about what it's really like to build software."
         )
         st.subheader("Education")
         st.markdown(
@@ -378,8 +381,7 @@ with tab_story:
         )
         st.write(
             "When I'm not coding, I like reading, sleeping, watching series and "
-            "movies, and playing ML and Roblox. "
-            "TODO: add what you read or watch lately."
+            "movies (especially comforting rom-coms and classic sitcoms), and playing ML and Roblox."
         )
         st.subheader("Milestones")
         st.table(MILESTONES.set_index("When"))
